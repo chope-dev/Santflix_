@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Netflix';
+    src: url('../../fonts/AvenirNextLTPro-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Netflix';
+    src: url('../../fonts/AvenirNextLTPro-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Netflix';
+    src: url('../../fonts/AvenirNextLTPro-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Netflix';
+    src: url('../../fonts/AvenirNextLTPro-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.credits {
+    font-family: system-ui;
+    background: #212429;
+    font-size: 11px;
+    color: white;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+}
+.credits a {
+    color: #F865B0;
+    text-decoration: none;
+}
+
+body {
+    background: black;
+    color: white;
+    margin: 0;
+    font-family: 'Netflix';
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    /* border: 1px solid purple; */
+    padding: 15px 15px 100px;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to bottom, black 0%, black 50%, transparent 100%);
+}
+
+.navigation-item {
+    list-style: none;
+    /* border: 1px solid yellow; */
+    text-align: center;
+}
+
+.navigation {
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    justify-content: space-around;
+}
+
+.featured {
+    margin-top: -90px;
+    position: relative;
+}
+.featured-details {
+    border: 1px solid red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top, black 0%,transparent 0%);
+}
+
+.tags {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.tag:before {
+    content: '●';
+    margin-right: 5px;
+}
+
+.tag:first-child:before {
+    display: none;
+}
+
+.featured-actions {
+    /* height: 100px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.button {
+    border: 1px solid blue;
+}
+
+.button-secondary {
+    border: 1px solid red;
+}
